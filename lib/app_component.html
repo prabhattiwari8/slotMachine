@@ -1,0 +1,14 @@
+<h1>Slot Machine</h1>
+<div ng-if="credits==0">
+    <label class="label.credits">Add Credits</label>
+    <input class="credits" type="number" ng-model="credits">
+</div>
+<div ng-if="credits>0">
+    <label>Total Credits is : {{credits}}</label>
+</div>
+<div ng-if="credits>0">
+    <input class="slot" type="text" ng-model="value1">
+    <input class="slot" type="text" ng-model="value2">
+    <input class="slot" type="text" ng-model="value3">
+    <button ng-click="calculateSlots()">Click Me!</button>
+</div>
